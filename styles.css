@@ -1,2 +1,29 @@
 * {font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.logo {
+  height:  900px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  outline: red solid 2px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  outline: blue solid 2px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
