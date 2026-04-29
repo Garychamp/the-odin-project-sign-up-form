@@ -3,9 +3,11 @@
 
 form {
   display: flex;
-  flex-direction: row;
   outline: green solid 2px;
-  width: 1000px;
+  max-width: auto;
+  max-height: auto;
+  height: auto;
+  width: auto;
 }
 
 .logo {
@@ -31,19 +33,19 @@ form {
   display: flex;
   flex-direction: column;
   outline: blue solid 2px;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px;
   background-color: #f9f9f9;
-  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-container {
   outline: orange solid 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 600px;
+  height: 300px;
+  max-height: 300px;
+  padding-top: 200px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .middle-container {
@@ -51,6 +53,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 600px;
+  height: 300px;
 }
 
 .bottom-container {
@@ -58,4 +62,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 600px;
+  height: 300px;
 }
