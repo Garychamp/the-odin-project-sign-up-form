@@ -40,12 +40,23 @@ form {
 
 .top-container {
   outline: orange solid 2px;
-  width: 600px;
+  width: 800px;
   height: 300px;
   max-height: 300px;
-  padding-top: 200px;
   font-weight: 700;
   font-size: 20px;
+}
+
+.top-container p1 {
+  display: block;
+  margin: 100px 0 0 40px;
+}
+
+p1 {
+  outline: black solid 2px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 .middle-container {
