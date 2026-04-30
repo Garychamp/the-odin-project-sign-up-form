@@ -79,6 +79,7 @@ p1 {
   align-items: flex-start;
   width: 600px;
   height: 300px;
+  margin-top: 20px;
 }
 
 .right-middle-container {
@@ -88,6 +89,7 @@ p1 {
   align-items: flex-start;
   width: 600px;
   height: 300px;
+  margin-top: 50px;
 }
 
 label {
