@@ -1,9 +1,9 @@
-* {font-family: Roboto, Geneva, Tahoma, sans-serif;
+* {
+  font-family: Roboto, Geneva, Tahoma, sans-serif;
 }
 
 form {
   display: flex;
-  outline: green solid 2px;
   max-width: auto;
   max-height: auto;
   height: auto;
@@ -11,35 +11,48 @@ form {
 }
 
 .logo {
-  height:  900px;
+  height: 900px;
   width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  outline: red solid 2px;
+  position: relative;
+  overflow: hidden;
   font-size: 25px;
   font-weight: bold;
   color: #333;
 }
-.logo img {
+.background-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* fills container, may crop */
+  object-fit: cover;
   display: block;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  outline: blue solid 2px;
   max-width: 1200px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100px;
+  display: block;
+}
+
 .top-container {
-  outline: orange solid 2px;
   width: 800px;
   height: 300px;
   max-height: 300px;
@@ -54,16 +67,14 @@ form {
 }
 
 p1 {
-  outline: black solid 2px;
   margin: 0;
   padding: 0;
   line-height: 1.5;
-    font-weight: 700;
+  font-weight: 700;
   font-size: 20px;
 }
 
 .middle-container {
-  outline: purple solid 2px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -73,7 +84,6 @@ p1 {
 }
 
 .left-middle-container {
-  outline: magenta solid 2px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -83,7 +93,6 @@ p1 {
 }
 
 .right-middle-container {
-  outline: magenta solid 2px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -101,12 +110,20 @@ input {
   margin: 5px 0 0 0;
   padding: 10px;
   width: 200px;
-  border: 1px solid #ccc;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
 }
 
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
+
 .bottom-container {
-  outline: cyan solid 2px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,7 +133,7 @@ input {
 }
 
 button {
-  background-color:#596D48 ;
+  background-color: #596d48;
   color: white;
   padding: 15px 30px;
   margin: 20px 0 0 40px;
